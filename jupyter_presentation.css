@@ -1,0 +1,209 @@
+/* Change code font */
+.CodeMirror pre {
+    font-family: Inconsolata,monospace;
+    font-size: 12;
+}
+
+/*
+Font rules
+https://portal.mytum.de/corporatedesign/stylesweb/index_typografie/#css
+*/
+.text_cell_render,
+.text_cell_render h1,
+.text_cell_render h2,
+.text_cell_render h3,
+.text_cell_render h4,
+.text_cell_render h5,
+.text_cell_render h6 {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+/*
+Heading 2 color
+*/
+.rise-enabled .text_cell_render h2 {
+    color: #0065BD; /* Pantone 300 C */
+}
+
+/*
+Links
+https://portal.mytum.de/corporatedesign/stylesweb/index_typografie/#links
+*/
+.rise-enabled .reveal a { 
+  padding-bottom: 1px; 
+  border-bottom: 1px solid gray; 
+  -webkit-transition: all 100ms linear; 
+  color: #333; 
+  text-decoration: none; 
+  transition: all 100ms linear; 
+}
+.rise-enabled .reveal a:link {
+  color: #333;
+}
+.rise-enabled .reveal a:hover { 
+  border-bottom-width: 3px; 
+  border-bottom-color: #3c88d9; 
+  color: #3070b3;
+} 
+
+/*
+Header
+*/
+.rise-enabled .myheader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16%;
+    z-index: -1;
+    /*border: 1px solid #73AD21;*/
+}
+
+/*
+Scale image to parent height
+https://stackoverflow.com/questions/19192892/css-how-can-i-set-image-size-relative-to-parent-height/19193223
+*/
+.rise-enabled .myheader img {
+  float: right;
+  max-width: 100%;
+  max-height: 100%;
+  /*border: 1px solid rgb(0,82,147);*/
+}
+
+
+/*************
+*** Footer ***
+*************/
+.rise-enabled .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding-left: 5px;
+   /* border: 1px solid black;*/
+    z-index: -1;
+}
+
+/* 
+Image. Limited to 10% of the parent. 
+Inline-block to share the line with text.
+*/
+.rise-enabled .footer .footer-img-bgt {
+    float: left;
+    max-height: 100%;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+
+.rise-enabled .footer img {
+   /* border: 1px solid red;*/
+}
+
+.rise-enabled .footer .text-container {
+    position: relative;
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    display: inline-block;
+    max-height: 100%;
+    max-width: 80%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    vertical-align: bottom;
+}
+
+/*
+Test in footer. Inline-block to share the line with the image.
+*/
+.rise-enabled .footer .text-container .text {
+    display: block; /* For width. */
+    width: 100%;
+    color: #003359;
+    padding: 10px;
+    font-size: large;
+    margin-left: 0;
+    padding-left: 0;
+    resize: none;
+    /* Fancy line. */
+    border-top: 1px solid #003359;
+}
+
+/*
+Make the superscript text smaller.
+*/
+.rise-enabled .footer .text sup {
+    vertical-align: baseline;
+    font-size: 0.5em:;
+    position: relative; 
+}
+
+/* 
+Slide number 
+*/
+.rise-enabled .reveal .slide-number {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  right: 3.3em;
+  bottom: 3.9em;
+  font-size: 100%;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: #003359;
+  background-color: transparent;
+}
+
+/*
+Navigator-colors
+*/
+.rise-enabled .reveal .controls .navigate-left,
+.rise-enabled .reveal .controls .navigate-left.enabled {
+  border-right-color: #003359;
+}
+.rise-enabled .reveal .controls .navigate-left.enabled:hover,
+.rise-enabled .reveal .controls .navigate-left.enabled.enabled:hover {
+  border-right-color: #f7f7f7;
+}
+.rise-enabled .reveal .controls .navigate-right,
+.rise-enabled .reveal .controls .navigate-right.enabled {
+  border-left-color: #003359;
+}
+.rise-enabled .reveal .controls .navigate-right.enabled:hover,
+.rise-enabled .reveal .controls .navigate-right.enabled.enabled:hover {
+  border-left-color: #f7f7f7;
+}
+.rise-enabled .reveal .controls .navigate-up,
+.rise-enabled .reveal .controls .navigate-up.enabled {
+  border-bottom-color: #003359;
+}
+.rise-enabled .reveal .controls .navigate-up.enabled:hover,
+.rise-enabled .reveal .controls .navigate-up.enabled.enabled:hover {
+  border-bottom-color: #f7f7f7;
+}
+.rise-enabled .reveal .controls .navigate-down,
+.rise-enabled .reveal .controls .navigate-down.enabled {
+  border-top-color: #003359;
+}
+.rise-enabled .reveal .controls .navigate-down.enabled:hover,
+.rise-enabled .reveal .controls .navigate-down.enabled.enabled:hover {
+  border-top-color: #f7f7f7;
+}
+
+/*
+Navigator opacity
+*/
+.rise-enabled .reveal .controls .navigate-left.enabled {
+  opacity: 1;
+}
+.rise-enabled .reveal .controls .navigate-right.enabled {
+  opacity: 1;
+}
+.rise-enabled .reveal .controls .navigate-up.enabled {
+  opacity: 1;
+}
+.rise-enabled .reveal .controls .navigate-down.enabled {
+  opacity: 1;
+}
