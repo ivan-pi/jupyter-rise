@@ -6,6 +6,6 @@ dependencies:
   - python
   - numpy
   - matplotlib
+  - scipy
   - pandas
-  - bokeh
   - rise
